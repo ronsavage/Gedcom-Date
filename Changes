@@ -1,0 +1,27 @@
+Revision history for Perl module Gedcom::Date
+
+0.05  11 FEB 2010
+	- Change %y to %Y. RT#52372. Thanx to Rob Fugina.
+	- Add Build.PL, Changelog.ini, MANIFEST.SKIP and MYMETA.yml.
+
+0.04  31 AUG 2003
+    - BUG FIX: latest() and earliest() now return the correct values
+      for 'MONTH YEAR' dates
+
+    - new method add() does date math
+
+    - new method clone() makes a deep copy of the object
+
+    - new method sort_date() returns a string that is suited for
+      sorting, e.g. in indices
+
+0.03  3 AUG 2003
+    - incomplete dates ("AUG 2003", "2003") are now handled correctly
+
+0.02  2 AUG 2003
+    - added a localizable output routine as_text()
+
+0.01  20 JUL 2003
+	- original version
+
+

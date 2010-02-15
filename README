@@ -1,0 +1,15 @@
+Gedcom-Date
+===========
+
+This module parses dates from Gedcom files. It knows about all the
+date formats defined by the Gedcom standard v5.5, including those for
+periods and date ranges.
+
+INSTALLATION
+
+To install this module type the following:
+
+perl Makefile.PL
+make
+make test
+make install

@@ -1,0 +1,15 @@
+---
+build_requires:
+  Test::More: 0
+configure_requires:
+  Module::Build: 0.36
+distribution_type: module
+dynamic_config: 0
+generated_by: 'Module::Build version 0.3603'
+installdirs: site
+name: Gedcom-Date
+requires:
+  DateTime: 0.15
+  Params::Validate: 0
+version: 0.04
+version_from: lib/Gedcom/Date.pm
