@@ -1,15 +1,43 @@
 ---
+abstract: 'Perl class for interpreting dates in Gedcom files'
+author:
+  - 'Eugene van der Pijll (pijll@gmx.net)'
 build_requires:
   Test::More: 0
 configure_requires:
   Module::Build: 0.36
-distribution_type: module
 dynamic_config: 0
 generated_by: 'Module::Build version 0.3603'
-installdirs: site
+license: artistic
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
 name: Gedcom-Date
+provides:
+  Gedcom::Date:
+    file: lib/Gedcom/Date.pm
+    version: 0.05
+  Gedcom::Date::Approximated:
+    file: lib/Gedcom/Date/Approximated.pm
+    version: 0.05
+  Gedcom::Date::Interpreted:
+    file: lib/Gedcom/Date/Interpreted.pm
+    version: 0.05
+  Gedcom::Date::Period:
+    file: lib/Gedcom/Date/Period.pm
+    version: 0.05
+  Gedcom::Date::Phrase:
+    file: lib/Gedcom/Date/Phrase.pm
+    version: 0.05
+  Gedcom::Date::Range:
+    file: lib/Gedcom/Date/Range.pm
+    version: 0.05
+  Gedcom::Date::Simple:
+    file: lib/Gedcom/Date/Simple.pm
+    version: 0.05
 requires:
   DateTime: 0.15
   Params::Validate: 0
-version: 0.04
-version_from: lib/Gedcom/Date.pm
+resources:
+  license: http://opensource.org/licenses/artistic-license.php
+version: 0.05

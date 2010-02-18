@@ -1,5 +1,6 @@
 Build.PL
-Changes
+Changelog.ini
+CHANGES
 lib/Gedcom/Date.pm
 lib/Gedcom/Date/Approximated.pm
 lib/Gedcom/Date/Interpreted.pm
