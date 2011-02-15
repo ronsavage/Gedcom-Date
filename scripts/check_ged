@@ -1,6 +1,7 @@
-#!/usr/bin/perl -w
+#!/usr/bin/env perl
 
 use strict;
+use warnings;
 
 use Gedcom;
 use Gedcom::Date;
@@ -59,8 +60,8 @@ my %limit = (
 #    mulpar key person familynum familynum
 # person has no family pointers
 #    nofams key person
-# 
-# 
+#
+#
 # marriage checks:
 # person marries before birth
 #    unbmar key person birth marriage spouse
@@ -91,7 +92,7 @@ my %limit = (
 #    mmnsnk key person family
 # person has same surname as spouse
 #    samnam key person marriage spouse
-# 
+#
 # parentage checks:
 # mother has more than _fecmom_ children
 #    fecmom key person nkids nfamilies
