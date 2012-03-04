@@ -3,7 +3,7 @@ WriteMakefile(
     NAME         => 'Gedcom::Date',
     VERSION_FROM => 'lib/Gedcom/Date.pm',
     AUTHOR       => 'Eugene van der Pijll (pijll@gmx.net)',
-    ABSTRACT     => '',
+    ABSTRACT     => 'Perl class for interpreting dates in Gedcom files',
     PREREQ_PM    => {
                      'Test::More' => 0,
                      'DateTime' => 0.15,
