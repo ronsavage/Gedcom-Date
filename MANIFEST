@@ -11,6 +11,7 @@ lib/Gedcom/Date/Simple.pm
 LICENSE
 Makefile.PL
 MANIFEST
+META.json
 META.yml
 README
 scripts/check_ged
