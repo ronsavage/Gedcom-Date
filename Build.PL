@@ -3,7 +3,7 @@ use Module::Build;
 Module::Build -> new
 (
  module_name    => 'Gedcom::Date',
- license        => 'perl_5',
+ license        => 'artistic_2',
  dist_abstract  => 'Perl class for interpreting dates in Gedcom files',
  dist_author    => 'Eugene van der Pijll (pijll@gmx.net)',
  build_requires =>

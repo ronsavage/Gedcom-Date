@@ -1,7 +1,7 @@
 use ExtUtils::MakeMaker;
 WriteMakefile(
     NAME         => 'Gedcom::Date',
-	LICENSE   => 'perl_5',
+	LICENSE   => 'artistic_2',
     VERSION_FROM => 'lib/Gedcom/Date.pm',
     AUTHOR       => 'Eugene van der Pijll (pijll@gmx.net)',
     ABSTRACT     => 'Perl class for interpreting dates in Gedcom files',
