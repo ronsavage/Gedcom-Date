@@ -8,7 +8,7 @@ Module::Build -> new
  dist_author    => 'Eugene van der Pijll (pijll@gmx.net)',
  build_requires =>
  {
-	 Test::Simple=> 0,
+	 Test::More=> 0,
  },
  configure_requires =>
  {
