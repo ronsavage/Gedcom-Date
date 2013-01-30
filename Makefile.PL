@@ -6,7 +6,7 @@ WriteMakefile(
     AUTHOR       => 'Eugene van der Pijll (pijll@gmx.net)',
     ABSTRACT     => 'Perl class for interpreting dates in Gedcom files',
     PREREQ_PM    => {
-                     'Test::More' => 0,
+                     'Test::Simple' => 0,
                      'DateTime' => 0.15,
                      'Params::Validate' => 0,
                     },
