@@ -1,6 +1,10 @@
 Revision history for Perl module Gedcom::Date
 
-0.07  Unreleased
+0.08  Wed Feb 18 16:32:00 2015
+	- Rename CHANGES to Changes as per CPAN::Spec::Changes.
+
+0.07  Wed Feb 18 16:32:00 2015
+	- Rename CHANGES to Changes as per CPAN::Spec::Changes.
 	- Replace /usr/bin/perl with /usr/bin/env perl.
 	- Replace common::sense with use strict and use warnings, to get uninit var warnings.
 
