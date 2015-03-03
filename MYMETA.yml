@@ -3,11 +3,11 @@ abstract: 'Perl class for interpreting dates in Gedcom files'
 author:
   - 'Eugene van der Pijll (pijll@gmx.net)'
 build_requires:
-  Test::More: '0'
+  ExtUtils::MakeMaker: '0'
 configure_requires:
-  Module::Build: '0.38'
+  ExtUtils::MakeMaker: '0'
 dynamic_config: 0
-generated_by: 'Module::Build version 0.4211, CPAN::Meta::Converter version 2.142060'
+generated_by: 'Module::Build version 0.4211, CPAN::Meta::Converter version 2.143240'
 license: artistic_2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -38,6 +38,7 @@ provides:
 requires:
   DateTime: '0.15'
   Params::Validate: '0'
+  Test::More: '1.001014'
 resources:
   license: http://www.perlfoundation.org/artistic_license_2_0
 version: '0.08'
