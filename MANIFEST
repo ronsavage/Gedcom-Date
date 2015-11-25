@@ -14,7 +14,6 @@ META.json
 META.yml
 README
 scripts/check_ged
-t/001_load.t
 t/002_parse.t
 t/003_convert.t
 t/100_compare.t
