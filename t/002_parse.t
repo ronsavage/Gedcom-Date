@@ -1,20 +1,20 @@
-# -*- perl -*-
+use strict;
+use warnings;
 
-# t/002_parse.t - parse dates
-
-BEGIN{
-    $^W = 1;
-}
-
-use Test::More tests => 28;
 use Gedcom::Date;
+
+use Test::Stream -V1;
+
+# -------------------
 
 foreach my $str (<DATA>) {
     chomp $str;
-    $d = Gedcom::Date->parse($str);
-    isa_ok( $d, 'Gedcom::Date', $str );
+    my($d) = Gedcom::Date->parse($str);
+    isa_ok($d, 'Gedcom::Date');
     is($d->gedcom, $str, "parsed $str");
 }
+
+done_testing();
 
 __DATA__
 10 JUL 2003

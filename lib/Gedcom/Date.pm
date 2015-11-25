@@ -5,7 +5,7 @@ use DateTime::Locale;
 
 use vars qw($VERSION);
 
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 
 use Gedcom::Date::Simple;
 use Gedcom::Date::Period;
@@ -216,7 +216,7 @@ results in "CAL 2021".
 
 If the object is a simple date, it will become a calculated date (see
 Gedcom::Date::Approximated) after this addition, as shown in the
-examples above. If you don't want to advertise that the date is the
+examples above. If you do not want to advertise that the date is the
 result of a calculation, set the C<secret> parameter to 1.
 
 =item * earliest
@@ -259,6 +259,16 @@ with the DefaultLocale method.
 =head1 AUTHOR
 
 Eugene van der Pijll <pijll@gmx.net>
+
+=head1 REPOSITORY
+
+L<https://github.com/ronsavage/Gedcom-Date>.
+
+=head1 See Also
+
+L<Genealogy::Date>.
+
+L<Genealogy::Gedcom::Date>.
 
 =head1 COPYRIGHT
 

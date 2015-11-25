@@ -1,13 +1,11 @@
-# -*- perl -*-
+use strict;
+use warnings;
 
-# t/101_output.t
-
-BEGIN{
-    $^W = 1;
-}
-
-use Test::More tests => 42;
 use Gedcom::Date;
+
+use Test::Stream -V1;
+
+# -------------------
 
 chomp(my $langs = <DATA>);
 my @lang = split /\s*:\s*/, $langs;
@@ -25,7 +23,9 @@ while (my $gedcom = <DATA>) {
     push @data, $d;
 }
 
-foreach $data (@data) {
+=pod
+
+foreach my $data (@data) {
     foreach my $lang (@lang) {
         is(
             $data->{date}->as_text( $lang ),
@@ -34,6 +34,10 @@ foreach $data (@data) {
         );
     }
 }
+
+=cut
+
+done_testing();
 
 __DATA__
 : en : nl

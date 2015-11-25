@@ -1,15 +1,31 @@
-Gedcom-Date
-===========
+README file for Gedcom-Date.
 
-This module parses dates from Gedcom files. It knows about all the
-date formats defined by the Gedcom standard v5.5, including those for
-periods and date ranges.
+See also: CHANGES and Changelog.ini.
 
-INSTALLATION
+Warning: WinZip 8.1 and 9.0 both contain an 'accidental' bug which stops
+them recognizing POSIX-style directory structures in valid tar files.
+You are better off using a reliable tool such as InfoZip:
+ftp://ftp.info-zip.org/pub/infozip/
 
-To install this module type the following:
+1 Installing from a Unix-like distro
+------------------------------------
+shell> tar xvf Gedcom-Date-1.00.tgz
+shell> cd Gedcom-Date-1.00
+shell> perl Makefile.PL
+shell> make
+shell> make test
+shell> su              (for Unix-like systems, if using the system Perl)
+shell> make install
+shell> exit            (for Unix-like systems)
 
-perl Makefile.PL
-make
-make test
-make install
+On all systems:
+
+Run lib/Gedcom/Date.pm through your favourite pod2html translator.
+
+2 Installing from an ActiveState distro
+---------------------------------------
+Note: These instructions are literally ancient and may have to be changed:
+shell>unzip Gedcom-Date-1.00.zip
+shell>ppm install --location=. Gedcom-Date
+shell>del Gedcom-Date-1.00.ppd
+shell>del PPM-Gedcom-Date-1.00.tar.gz

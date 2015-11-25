@@ -1,13 +1,11 @@
-# -*- perl -*-
+use strict;
+use warnings;
 
-# t/201_clone.t - clone dates
-
-BEGIN{
-    $^W = 1;
-}
-
-use Test::More tests => 28;
 use Gedcom::Date;
+
+use Test::Stream -V1;
+
+# -------------------
 
 while (<DATA>) {
     chomp;
@@ -19,6 +17,8 @@ while (<DATA>) {
     $gd2->add( years => 10, months => 2 );
     is( $gd1->gedcom, $_, "cloning '$_'" );
 }
+
+done_testing();
 
 __DATA__
 10 JUL 2003

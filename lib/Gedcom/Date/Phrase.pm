@@ -4,7 +4,7 @@ use strict;
 
 use vars qw($VERSION @ISA);
 
-our $VERSION = '0.08';
+our $VERSION = '0.09';
 @ISA = qw/Gedcom::Date/;
 
 use Gedcom::Date;
@@ -72,6 +72,16 @@ Parse dates from Gedcom files.
 
 Eugene van der Pijll <pijll@gmx.net>
 
+=head1 REPOSITORY
+
+L<https://github.com/ronsavage/Gedcom-Date>.
+
+=head1 See Also
+
+L<Genealogy::Date>.
+
+L<Genealogy::Gedcom::Date>.
+
 =head1 COPYRIGHT
 
 Copyright (c) 2003 Eugene van der Pijll.  All rights reserved.
@@ -81,12 +91,5 @@ it and/or modify it under the same terms as Perl itself.
 
 The full text of the license can be found in the
 LICENSE file included with this module.
-
-
-=head1 SEE ALSO
-
-L<Gedcom::Date>,
-
-perl(1).
 
 =cut

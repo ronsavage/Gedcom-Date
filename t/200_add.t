@@ -1,13 +1,11 @@
-# -*- perl -*-
+use strict;
+use warnings;
 
-# t/200_add.t - add dates
-
-BEGIN{
-    $^W = 1;
-}
-
-use Test::More tests => 6;
 use Gedcom::Date;
+
+use Test::Stream -V1;
+
+# -------------------
 
 while (<DATA>) {
     chomp;
@@ -16,6 +14,8 @@ while (<DATA>) {
     $gd1->add( split /\s+/, $dur );
     is( $gd1->gedcom, $d2, "$d1 + $dur = $d2" );
 }
+
+done_testing();
 
 __DATA__
 21 AUG 2003 , years 1 months 1 days 1   , CAL 22 SEP 2004
