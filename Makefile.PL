@@ -1,4 +1,4 @@
-uuse strict;
+use strict;
 use warnings;
 
 use Config;
