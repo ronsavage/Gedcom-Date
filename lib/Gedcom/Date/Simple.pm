@@ -178,9 +178,9 @@ sub _date_as_text {
     $dt->set(locale => $locale);
 
     if ($self->{known}{d}) {
-        my $format = $dt->locale->long_date_format;
+        my $format = $dt->locale->date_format_long;
         $format =~ s/%y\b/%Y/g; # never, EVER, use 2-digit years
-        return $dt->strftime($format);
+        return $dt->format_cldr($format);
     } elsif ($self->{known}{m}) {
         return $dt->strftime('%B %Y');
     } else {

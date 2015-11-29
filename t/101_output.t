@@ -8,34 +8,39 @@ use Test::Stream -V1;
 # -------------------
 
 chomp(my $langs = <DATA>);
-my @lang = split /\s*:\s*/, $langs;
 
-my @data;
-while (my $gedcom = <DATA>) {
-    my $d = { gedcom => $gedcom,
-              date => Gedcom::Date->parse($gedcom),
-            };
-    foreach my $l (@lang) {
-        chomp(my $str = <DATA>);
-        $str =~ s/^\s*//;
-        $d->{$l} = $str;
+my(@lang) = split(/\s*:\s*/, $langs);
+
+my(@data);
+
+while (my $gedcom = <DATA>)
+{
+	chomp($gedcom);
+
+	my($d) =
+	{
+		date   => Gedcom::Date -> parse($gedcom),
+		gedcom => $gedcom,
+	};
+
+    for my $lang (@lang)
+	{
+		chomp(my $str = <DATA>);
+
+		$str		=~ s/^\s*//;
+		$$d{$lang}	= $str;
     }
+
     push @data, $d;
 }
 
-=pod
-
-foreach my $data (@data) {
-    foreach my $lang (@lang) {
-        is(
-            $data->{date}->as_text( $lang ),
-            $data->{$lang},
-            "$data->{gedcom} in $lang"
-        );
+for my $data (@data)
+{
+	for my $lang (@lang)
+	{
+		is($$data{date}->as_text($lang), "$$data{$lang}", "Language: $lang. Date: $$data{$lang}");
     }
 }
-
-=cut
 
 done_testing();
 

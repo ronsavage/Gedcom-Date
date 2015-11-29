@@ -35,8 +35,8 @@ my(%params) =
 	PREREQ_PM =>
 	{
 		'Config' => 0,
-		'DateTime' => 0.15,
-		'DateTime::Locale' => 0.15,
+		'DateTime' => 1.21,
+		'DateTime::Locale' => 1.01,
 		'File::Spec' => 0,
 		'File::Temp' => 0,
 		'overload' => 0,
