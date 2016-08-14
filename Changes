@@ -1,6 +1,6 @@
 Revision history for Perl module Gedcom::Date
 
-1.04  2016-08-14T11:33:00
+0.10  2016-08-14T11:33:00
 	- Stop using Test::Stream. Use Test::More shipped in the Test::Simple distro.
 		See RT#116933. Thanx to Chad Granum.
 	- Update version #s in pre-reqs.
