@@ -78,7 +78,7 @@ sub gedcom {
     my $self = shift;
 
     if (!defined $self->{gedcom}) {
-        $self->{datetime}->set(locale => 'en');
+        $self->{datetime}->set_locale('en');
         my $str;
         if ($self->{known}{d}) {
             $str = uc $self->{datetime}->strftime('%d %b %Y');
