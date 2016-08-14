@@ -175,7 +175,7 @@ sub _date_as_text {
     my ($self, $locale) = @_;
 
     my $dt = $self->{datetime};
-    $dt->set(locale => $locale);
+    $dt->set_locale($locale);
 
     if ($self->{known}{d}) {
         my $format = $dt->locale->date_format_long;
