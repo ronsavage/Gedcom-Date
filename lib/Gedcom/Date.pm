@@ -264,6 +264,12 @@ Eugene van der Pijll <pijll@gmx.net>
 
 L<https://github.com/ronsavage/Gedcom-Date>.
 
+=head1 TODO
+
+Implement other calendars (Julian, Hebrew, French).
+
+More languages in as_text().
+
 =head1 See Also
 
 L<Genealogy::Date>.

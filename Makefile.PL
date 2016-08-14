@@ -35,16 +35,19 @@ my(%params) =
 	PREREQ_PM =>
 	{
 		'Config' => 0,
-		'DateTime' => 1.21,
-		'DateTime::Locale' => 1.01,
+		'DateTime' => 1.36,
+		'DateTime::Locale' => 1.05,
 		'File::Spec' => 0,
 		'File::Temp' => 0,
 		'overload' => 0,
 		'Params::Validate' => 0,
 		'strict' => 0,
-		'Test::Stream' => 1.302026,
 		'vars' => 0,
 		'warnings' => 0,
+	},
+	TEST_REQUIRES =>
+	{
+		'Test::Simple' => 1.302052, # For Test::More.
 	},
 	VERSION_FROM => 'lib/Gedcom/Date.pm',
 );

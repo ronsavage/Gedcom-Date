@@ -1,5 +1,16 @@
 Revision history for Perl module Gedcom::Date
 
+1.04  2016-08-14T11:33:00
+	- Stop using Test::Stream. Use Test::More shipped in the Test::Simple distro.
+		See RT#116933. Thanx to Chad Granum.
+	- Update version #s in pre-reqs.
+	- Adopt new repo structure. For details, see
+		http://savage.net.au/Ron/html/My.Workflow.for.Building.Distros.html.
+	- Update .gitignore and MANIFEST.SKIP.
+	- Change licence from Artistic to Perl.
+	- Move Test::Simple to TEST_REQUIRES.
+	- Move TODO list from separate file into docs for Gedcom::Date.
+
 0.09  2015-11-26T08:32:00
 	- Update Gedcom::Date::Simple._date_as_text() from long_date_format() to date_format_long().
 	- Add github repo https://github.com/ronsavage/Gedcom-Date.
