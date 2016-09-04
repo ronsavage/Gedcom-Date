@@ -63,17 +63,20 @@ if ($ExtUtils::MakeMaker::VERSION ge '6.46')
 	{
 		'meta-spec' =>
 		{
-			'version' => 2,
+			version => 2,
 		},
 		resources   =>
 		{
-			'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html?Name=Gedcom-Date',
-			'license' => 'http://opensource.org/licenses/GPL-3.0',
-			repository =>
+			bugtracker =>
 			{
-				'type' => 'git',
-				'url' => 'https://github.com/ronsavage/Gedcom-Date.git',
-				'web' => 'https://github.com/ronsavage/Gedcom-Date',
+				web => 'https://rt.cpan.org/Public/Dist/Display.html?Name=Gedcom-Date',
+			},
+			license		=> 'http://dev.perl.org/licenses/',
+			repository	=>
+			{
+				type	=> 'git',
+				url		=> 'https://github.com/ronsavage/Gedcom-Date.git',
+				web		=> 'https://github.com/ronsavage/Gedcom-Date',
 			},
 		},
 	};
