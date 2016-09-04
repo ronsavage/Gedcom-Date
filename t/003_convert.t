@@ -5,7 +5,7 @@ use DateTime;
 
 use Gedcom::Date;
 
-use Test::Stream -V1;
+use Test::More;
 
 # -------------------
 
